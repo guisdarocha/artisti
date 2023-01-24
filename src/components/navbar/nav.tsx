@@ -1,11 +1,19 @@
 import React from 'react'
+import logo from '../../assets/logo.png'
 
 type navProps = {}
 
-const nav = (props: navProps) => {
+const Nav = (props: navProps) => {
   return (
-    <div>nav</div>
+    <>
+    <img src={logo} alt="" />
+    <div className="container">
+        <li> SOBRE NÓS</li>
+        <li> PRODUTOS </li>
+        <button className='reserve'>RESERVE</button>
+    </div>
+    </>
   )
 }
 
-export default nav
+export default Nav;
