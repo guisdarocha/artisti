@@ -1,12 +1,14 @@
 import './App.css'
-import Nav from './components/navbar/Nav'
+import HeroSection from './components/HeroSection/HeroSection'
+import Nav from './components/navbar/nav'
 
 
 function App() {
 
   return (
     <>
-    <Nav />
+      <Nav />
+      <HeroSection  />
     </>
   )
 }
