@@ -3,7 +3,7 @@ import bg from "../../assets/background.png"
 
 
 export const HeroStyle = styled.div`
-    margin: 20px auto 85px auto;
+    margin: 35px auto 85px auto;
     height: 779px;
     max-width: 1191px;
     background-image: url(${bg});
