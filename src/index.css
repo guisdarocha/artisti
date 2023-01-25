@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "claredon-regular";
+  src: url("../src/assets/ClarendonRegular.otf");
+  src: url("../src/assets/ClarendonRegular.otf") format("woff"),
+  url("../src/assets/ClarendonRegular.otf") format("opentype"),
+  }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "clarendon-text-pro";
+  font-family: "claredon-regular";
 }
 
 a{

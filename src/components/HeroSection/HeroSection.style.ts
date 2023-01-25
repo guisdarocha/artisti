@@ -23,7 +23,7 @@ export const HeroStyle = styled.div`
         font-size: 60px;
         line-height: 75px;
         letter-spacing: 0.03em;
-        max-width: 380px;
+        max-width: 385px;
       }
       h2{
         font-style: normal;
