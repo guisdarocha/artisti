@@ -5,7 +5,7 @@ import key from "../../assets/chave.png"
 
 const HeroSection = () => {
   return (
-    <HeroStyle>
+    <HeroStyle className='bg'>
       <div className='main-text'>
         <img src={key} alt="imagem de chave" />
         <h1>O Hidromel Brasileiro</h1>
@@ -23,8 +23,8 @@ const HeroSection = () => {
       </defs>
       <g className="parallax">
       <use href="#gentle-wave" x="48" y="0" fill="rgba(193,149,103,0.7" />
-      <use href="#gentle-wave" x="48" y="3" fill="rgba(193,149,103,0.5)" />
-      <use href="#gentle-wave" x="48" y="5" fill="rgba(193,149,103,0.3)" />
+      {/* <use href="#gentle-wave" x="48" y="3" fill="rgba(193,149,103,0.5)" /> */}
+      {/* <use href="#gentle-wave" x="40" y="5" fill="rgba(193,149,103,0.3)" /> */}
       <use href="#gentle-wave" x="48" y="7" fill="#C19567" />
       </g>
       </svg>

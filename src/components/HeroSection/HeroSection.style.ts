@@ -14,6 +14,12 @@ export const HeroStyle = styled.div`
     display: flex;
     justify-content: center;
 
+    :hover{
+      background-image: none;
+      background-color: #FDF3F2;
+
+    }
+
 
     .main-text{
       position: relative;
@@ -71,11 +77,11 @@ export const HeroStyle = styled.div`
 }
 .parallax > use:nth-child(1) {
   animation-delay: -2s;
-  animation-duration: 7s;
+  animation-duration: 18s;
 }
 .parallax > use:nth-child(2) {
   animation-delay: -3s;
-  animation-duration: 10s;
+  animation-duration: 18s;
 }
 .parallax > use:nth-child(3) {
   animation-delay: -4s;
