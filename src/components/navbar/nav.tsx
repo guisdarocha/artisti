@@ -16,6 +16,7 @@ const Nav = (props: navProps) => {
                  <button className='reserve'>RESERVE</button>
             </div>
     </div>
+    
     </NavStyle>
   )
 }
