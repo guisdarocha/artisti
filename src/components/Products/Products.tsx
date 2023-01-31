@@ -1,19 +1,31 @@
 import React from 'react'
 import Product from '../product/Product'
+import garrafa from '../../assets/vinho1.png'
+import favo from '../../assets/favo.png'
+import canela from '../../assets/canela_laranja.png'
+import { ProductStyle } from './Products.style'
 
 type Props = {}
 
 const Products = (props: Props) => {
   return (
     <>
-        <div>
-            <Product title={''} text={''}  />
-            <img src="" alt="" />
+    <ProductStyle>
+        <div className='hidromel'>
+          <div className='texto-hidromel' >
+            <Product title={'Hidromel Tradicional'} text={'Elaborado com méis de diferentes floradas,leveduras selecionadas e maturação em ambiente controlado. Somente mel e água.'}  />
+            <button className='reserve'>RESERVE AGORA</button>     
+          </div>         
+            <img src={garrafa} alt="" className='garrafa' />
+            <img src={favo} alt="" className='favo' />           
         </div>
-        <div>
-            <img src="" alt="" />
-            <Product title={''} text={''}  />
+        <div className='melomel'>
+            <img src={garrafa} alt="" className='garrafa-mel'/>
+            <img src={canela} alt="" className='canela'/>
+            <Product title={'Melomel'} text={'Elaborado com mel de florada de laranjeira, leva adição de laranjas e casca de canela in natura.'}  />
+            <button className='reserve'>RESERVE AGORA</button>
         </div>
+    </ProductStyle>
     </>
   )
 }
