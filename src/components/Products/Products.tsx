@@ -20,10 +20,12 @@ const Products = (props: Props) => {
             <img src={favo} alt="" className='favo' />           
         </div>
         <div className='melomel'>
-            <img src={garrafa} alt="" className='garrafa-mel'/>
-            <img src={canela} alt="" className='canela'/>
-            <Product title={'Melomel'} text={'Elaborado com mel de florada de laranjeira, leva adição de laranjas e casca de canela in natura.'}  />
-            <button className='reserve'>RESERVE AGORA</button>
+              <img src={garrafa} alt="" className='garrafa-mel'/>
+              <img src={canela} alt="" className='canela'/>
+            <div className="texto-mel">
+              <Product title={'Melomel'} text={'Elaborado com mel de florada de laranjeira, leva adição de laranjas e casca de canela in natura.'}  />
+              <button className='reserve'>RESERVE AGORA</button>
+            </div>
         </div>
     </ProductStyle>
     </>
