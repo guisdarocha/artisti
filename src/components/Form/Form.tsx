@@ -1,6 +1,7 @@
 import React from 'react'
 import { FormStyle } from './Form.style'
 import abelha from '../../assets/abelha.png'
+
 type formProps = {}
 
 const Form = (props: formProps) => {
@@ -26,7 +27,7 @@ const Form = (props: formProps) => {
                     <option value="hidromel">Hidromel Tradicional</option>
                     <option value="melomel">Melomel</option>
                 </select>
-                <button type="submit" className="enviar">Enviar Pedido</button>
+                <button type="submit" className="enviar"><i className="fa-brands fa-whatsapp"></i> Enviar Pedido</button>
             </form>
             <img src={abelha} alt="" />
         </div>

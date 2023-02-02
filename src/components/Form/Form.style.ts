@@ -16,6 +16,7 @@ input{
 }
 
 h4{ 
+    margin-bottom: 30px;
     width: 590px;
     font-weight: 100;
     font-size: 30px;
@@ -33,7 +34,7 @@ form{
 
 img{
     height: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
 
 select{
@@ -58,5 +59,16 @@ select{
     align-items: center;
 }
 
-
+button{
+    display: block;
+    margin: 30px auto;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.195em
+}
 `
