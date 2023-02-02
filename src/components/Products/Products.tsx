@@ -4,6 +4,7 @@ import garrafa from '../../assets/vinho1.png'
 import favo from '../../assets/favo.png'
 import canela from '../../assets/canela_laranja.png'
 import { ProductStyle } from './Products.style'
+import chave from "../../assets/chave.png"
 
 type Props = {}
 
@@ -13,7 +14,7 @@ const Products = (props: Props) => {
     <ProductStyle>
         <div className='hidromel'>
           <div className='texto-hidromel' >
-            <Product title={'Hidromel Tradicional'} text={'Elaborado com méis de diferentes floradas,leveduras selecionadas e maturação em ambiente controlado. Somente mel e água.'}  />
+            <Product title={'Hidromel Tradicional'} text={'Elaborado com méis de diferentes floradas, leveduras selecionadas e maturação em ambiente controlado. Somente mel e água.'}  />
             <button className='reserve'>RESERVE AGORA</button>     
           </div>         
             <img src={garrafa} alt="" className='garrafa' />
@@ -27,6 +28,7 @@ const Products = (props: Props) => {
               <button className='reserve'>RESERVE AGORA</button>
             </div>
         </div>
+        <img src={chave} alt=""  className='chave'/>
     </ProductStyle>
     </>
   )
