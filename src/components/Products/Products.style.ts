@@ -65,4 +65,11 @@ button{
     height: 354px;
 
 }
+
+.chave{
+    margin: 0 auto;
+    max-height: 32px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
 `
