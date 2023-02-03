@@ -69,6 +69,7 @@ button{
     font-weight: 100;
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: 0.195em
+    letter-spacing: 0.195em;
+    filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.21));
 }
 `
