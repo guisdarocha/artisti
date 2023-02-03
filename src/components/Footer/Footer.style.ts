@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const FooterStyle = styled.div`
+
 h5{
     font-weight: 100;
     font-size: 48px;
@@ -10,6 +11,14 @@ h5{
     margin-left: 80px;
     width: 482px;
     margin-bottom: 40px;
+}
+
+footer{
+    max-width: 1440px;
+    height: 145px;
+    background: #C19567;
+    display: flex;
+    justify-content: end;
 }
 
 button{
@@ -32,11 +41,21 @@ button{
     width: 985px;
     height: 400px;
     margin: 0 auto;
+    margin-bottom: 89px;
 }
 
-.texto{
-    
-    margin: auto 0;
-    
+.texto{   
+    margin: auto 0;  
+}
+
+.direitos{
+    margin: auto 0;  
+    justify-content: end;   
+    margin-right: 80px;
+}
+
+.socialmedia{
+    margin-top: 10px;
+    display:flex;
 }
 `

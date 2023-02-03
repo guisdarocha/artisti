@@ -35,6 +35,10 @@ export const HeroStyle = styled.div`
         line-height: 17px;
         letter-spacing: 0.03em;
       }
+      img{
+        max-height: 32px;
+  
+      }
 
     }
 

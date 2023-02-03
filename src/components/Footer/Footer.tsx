@@ -20,8 +20,10 @@ const Footer = (props: footerProps) => {
     <footer>
         <div className="direitos">
             <p>© 2023 Artist. Todos os direitos reservados.</p>
-            <img src={instagram} alt="" />
-            <img src={facebook} alt="" />            
+            <div className="socialmedia">
+                <img src={instagram} alt="" />
+                <img src={facebook} alt="" />  
+            </div>          
         </div>
     </footer>
 </FooterStyle>
