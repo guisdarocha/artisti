@@ -2,11 +2,13 @@ import React from 'react'
 import { FormStyle } from './Form.style'
 import abelha from '../../assets/abelha.png'
 
-type formProps = {}
+type formProps = {
+  form:any
+}
 
-const Form = (props: formProps) => {
+const Form = ({form}: formProps) => {
   return (
-    <FormStyle>
+    <FormStyle ref={form}>
         <div className='formulario' id='form'>
             <img src={abelha} alt="" />
             <form>
@@ -15,7 +17,7 @@ const Form = (props: formProps) => {
                     type="name"
                     placeholder="Nome"
                 />
-                <input 
+                <input
                     type="email"
                     placeholder="E-mail"
                 />

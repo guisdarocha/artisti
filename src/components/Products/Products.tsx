@@ -6,21 +6,23 @@ import canela from '../../assets/canela_laranja.png'
 import { ProductStyle } from './Products.style'
 import chave from "../../assets/chave.png"
 
-type Props = {}
+type productProps = {
+  products:any
+}
 
-const Products = (props: Props) => {
+const Products = (props: productProps) => {
 
   
   return (
     <>
-    <ProductStyle>
+    <ProductStyle ref={products}>
         <div className='hidromel'>
           <div className='texto-hidromel' >
             <Product title={'Hidromel Tradicional'} text={'Elaborado com méis de diferentes floradas, leveduras selecionadas e maturação em ambiente controlado. Somente mel e água.'}  />
             <button className='reserve' >RESERVE AGORA</button>     
           </div>         
             <img src={garrafa} alt="" className='garrafa' />
-            <img src={favo} alt="" className='favo' />           
+            <img src={favo} alt="" className='favo' />
         </div>
         <div className='melomel'>
               <img src={garrafa} alt="" className='garrafa-mel'/>
