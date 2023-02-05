@@ -13,7 +13,7 @@ const Nav = (props: navProps) => {
             <div className="containermenor">
                  <button className='sobrenos'> SOBRE NÓS</button>
                  <button className='produtos'> PRODUTOS </button>
-                 <button className='reserve'>RESERVE</button>
+                 <button className='reserve' >RESERVE</button>
             </div>
     </div>
     

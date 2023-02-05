@@ -7,7 +7,7 @@ type formProps = {}
 const Form = (props: formProps) => {
   return (
     <FormStyle>
-        <div className='formulario'>
+        <div className='formulario' id='form'>
             <img src={abelha} alt="" />
             <form>
                 <h4>Fazer uma reserva</h4>

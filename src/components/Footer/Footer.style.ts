@@ -34,6 +34,11 @@ button{
     line-height: 20px;
     letter-spacing: 0.195em;
     filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.21));
+    :hover{
+            background-color: #C19567;
+            transition: 0.7s;
+            color: #000000;
+        }
 }
 
 .barril{
