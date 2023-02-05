@@ -21,13 +21,12 @@ function App() {
       })
     };
 
-
   return (
     <>
       <Nav onClick={scroll} about={about} products={products} form={form} />
       <HeroSection  />
       <About about={about} />
-      <Products products={products}/>
+      <Products onClick={scroll} products={products}  form={form}/>
       <Form form={form}/>
       <Footer />
     </>

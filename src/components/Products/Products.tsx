@@ -6,23 +6,23 @@ import canela from '../../assets/canela_laranja.png'
 import { ProductStyle } from './Products.style'
 import chave from "../../assets/chave.png"
 
-type Props = {
+type productsProps = {
+  onClick:any
   products:any
+  form:any
 }
 
-const Products = ({products}: Props) => {
-  function reserve(){
-    window.scrollTo({top:2900, behavior:'smooth'})
-   }
-
+const Products = (props: productsProps) => {
+  const {onClick, products, form } = props;
+  
   return (
     <>
     <ProductStyle ref={products}>
         <div className='hidromel'>
           <div className='texto-hidromel' >
             <Product title={'Hidromel Tradicional'} text={'Elaborado com méis de diferentes floradas, leveduras selecionadas e maturação em ambiente controlado. Somente mel e água.'}  />
-            <button className='reserve' onClick={reserve}>RESERVE AGORA</button>
-          </div>
+            <button className='reserve' onClick={() => {onClick(form)}}>RESERVE AGORA</button>     
+          </div>         
             <img src={garrafa} alt="" className='garrafa' />
             <img src={favo} alt="" className='favo' />
         </div>
@@ -31,7 +31,7 @@ const Products = ({products}: Props) => {
               <img src={canela} alt="" className='canela'/>
             <div className="texto-mel">
               <Product title={'Melomel'} text={'Elaborado com mel de florada de laranjeira, leva adição de laranjas e casca de canela in natura.'}  />
-              <button className='reserve' onClick={reserve}>RESERVE AGORA</button>
+              <button className='reserve' onClick={() => {onClick(form)}}>RESERVE AGORA</button>
             </div>
         </div>
         <img src={chave} alt=""  className='chave'/>
