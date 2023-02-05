@@ -6,7 +6,6 @@ import Products from './components/Products/Products'
 import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
 
-
 function App() {
 
   return (

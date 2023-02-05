@@ -12,6 +12,7 @@ button{
         font-size: 16px;
         border-radius: 30px;
         filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.21));
+        cursor: pointer;
         :hover{
             background-color: #C19567;
             transition: 0.7s;

@@ -20,21 +20,32 @@ export const NavStyle = styled.div`
     width: 480px;
 
 
+
     button{
         letter-spacing: 0.28em;
         color: #6B6767;
         border: none;
         font-size: 16px;
+        cursor: pointer;
         }
     
  }
 
  .sobrenos{
     background: none;
+    :hover{
+        transition: 1s;
+        color: #000000;
+    }
+    
  }
 
  .produtos{
     background: none;
+    :hover{
+        transition: 1s;
+        color: #000000;
+    }
  }
  .reserve{
         width: 140px;
