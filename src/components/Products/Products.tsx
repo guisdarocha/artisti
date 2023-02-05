@@ -9,9 +9,7 @@ import chave from "../../assets/chave.png"
 type Props = {}
 
 const Products = (props: Props) => {
-  function reserve(){
-    window.scrollTo({top:2900, behavior:'smooth'})
-   }
+
   
   return (
     <>
@@ -19,7 +17,7 @@ const Products = (props: Props) => {
         <div className='hidromel'>
           <div className='texto-hidromel' >
             <Product title={'Hidromel Tradicional'} text={'Elaborado com méis de diferentes floradas, leveduras selecionadas e maturação em ambiente controlado. Somente mel e água.'}  />
-            <button className='reserve' onClick={reserve}>RESERVE AGORA</button>     
+            <button className='reserve' >RESERVE AGORA</button>     
           </div>         
             <img src={garrafa} alt="" className='garrafa' />
             <img src={favo} alt="" className='favo' />           
@@ -29,7 +27,7 @@ const Products = (props: Props) => {
               <img src={canela} alt="" className='canela'/>
             <div className="texto-mel">
               <Product title={'Melomel'} text={'Elaborado com mel de florada de laranjeira, leva adição de laranjas e casca de canela in natura.'}  />
-              <button className='reserve' onClick={reserve}>RESERVE AGORA</button>
+              <button className='reserve' >RESERVE AGORA</button>
             </div>
         </div>
         <img src={chave} alt=""  className='chave'/>

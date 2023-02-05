@@ -11,6 +11,7 @@ button{
         background-color: #D9D9D9;
         font-size: 16px;
         border-radius: 30px;
+        position: absolute;
         filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.21));
         cursor: pointer;
         :hover{
@@ -21,15 +22,20 @@ button{
     
     }
 
+.produtos{
+   max-width: 1440px;
+}
+
 .hidromel{
     display: flex;
     margin-left: 110px;
     justify-content: center;
     margin-top: 110px;
 
+
     .garrafa{
         right: -10px;
-        top: 1800px;
+        top: 2000px;
         justify-self: end;
         position: absolute;
         z-index: 1;
@@ -58,7 +64,7 @@ button{
         position: absolute;
         z-index: 1;
         left: 0px;
-        top: 2350px;
+        top: 2600px;
     }
     .canela{
         position: relative;
