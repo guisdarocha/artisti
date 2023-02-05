@@ -3,11 +3,13 @@ import { AboutStyle } from "./About.style"
 import chave from "../../assets/chave.png"
 import quemsomos from "../../assets/abelhafofa.png"
 
-type AboutProps = {}
+type AboutProps = {
+  about:any
+}
 
-const About = (props: AboutProps) => {
+const About = ({about}: AboutProps) => {
   return (
-    <AboutStyle>
+    <AboutStyle ref={about}>
      <div className="container quemsomos" >
       <img src={quemsomos} className=''/>
         <div className="sobrenos">
