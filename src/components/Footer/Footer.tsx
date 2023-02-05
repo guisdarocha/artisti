@@ -5,24 +5,33 @@ import facebook from '../../assets/facebook.png'
 import instagram from '../../assets/instagram.png'
 
 
-type footerProps = {}
+type footerProps = {
+
+}
 
 const Footer = (props: footerProps) => {
+
   return (
 <FooterStyle>   
     <div className="barril">
         <img src={barril} alt="" />
             <div className="texto">
                 <h5>Junte-se a nós nas redes sociais</h5>
-                <button>NOS SIGA</button>
+                    <a href='https://www.instagram.com/bellalunahidromeis/' target="_blank" rel="noopener noreferrer">
+                        <button>NOS SIGA</button>
+                    </a>
             </div>
     </div>
     <footer>
         <div className="direitos">
             <p>© 2023 Artist. Todos os direitos reservados.</p>
             <div className="socialmedia">
-                <img src={instagram} alt="" />
-                <img src={facebook} alt="" />  
+                    <a href='https://www.instagram.com/bellalunahidromeis/' target="_blank" rel="noopener noreferrer">
+                        <img src={instagram} alt="" />
+                    </a>
+                    <a href='https://www.instagram.com/bellalunahidromeis/' target="_blank" rel="noopener noreferrer">
+                        <img src={facebook} alt="" />  
+                    </a>
             </div>          
         </div>
     </footer>

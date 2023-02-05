@@ -10,9 +10,19 @@ input{
     border: none;
     margin: 10px auto;
     color: #6B6767;
-    ::placeholder{
-        padding-left: 20px;
-    }
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+input[type=name] {
+    padding-left: 20px;
+}
+input[type=email] {
+    padding-left: 20px;
+}
+input[type=phone] {
+    padding-left: 20px;
 }
 
 h4{ 
@@ -30,6 +40,7 @@ form{
     width: 590px;
     height: 554px;
     margin: 0;
+
 }
 
 img{
@@ -46,10 +57,6 @@ select{
     margin: 10px auto;
     color: #6B6767;
     padding-left: 15px;
-    
-}
-.select option{
-    border-bottom: solid 5px  red;
     
 }
 
@@ -71,6 +78,7 @@ button{
     line-height: 20px;
     letter-spacing: 0.195em;
     filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.21));
+    cursor: pointer;
     :hover{
             background-color: #C19567;
             transition: 0.7s;
