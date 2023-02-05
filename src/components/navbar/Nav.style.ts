@@ -42,6 +42,12 @@ export const NavStyle = styled.div`
         border-radius: 25px;
         background: #D9D9D9;
         padding: 3px 13px ;  
+
+        :hover{
+            background-color: #C19567;
+            transition: 0.7s;
+            color: #000000;
         }
+    }
  
 `
