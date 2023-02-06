@@ -11,13 +11,13 @@ const Form = ({form}: formProps) => {
 
     const [name, setName] = useState('')
     console.log(name)
-    
+
     function handleSubmit(event: any){
-        event.preventDefault();
+
     }
 
-    function novoNome() {
-        setName(name)
+    function novoNome(event:any) {
+        setName(event.target.value)
     }
   return (
     <FormStyle ref={form}>
@@ -46,8 +46,8 @@ const Form = ({form}: formProps) => {
                     <option value="hidromel">Hidromel Tradicional</option>
                     <option value="melomel">Melomel</option>
                 </select>
-                <a href={`https://wa.me/555492423006?text=${name}`} target={'_blank'}>
-                <button type="submit" className="enviar" ><i className="fa-brands fa-whatsapp"></i> Enviar Pedido</button>
+                <a href={`https://wa.me/555492423006?text=${name}`} target={'_blank'}><i className="fa-brands fa-whatsapp"></i>
+                 Enviar Pedido
                 </a>
             </form>
             <img src={abelha} alt="" />
