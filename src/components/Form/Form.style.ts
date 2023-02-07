@@ -25,7 +25,7 @@ input[type=phone] {
     padding-left: 20px;
 }
 
-h4{ 
+h4{
     margin-bottom: 30px;
     width: 590px;
     font-weight: 100;
@@ -57,7 +57,7 @@ select{
     margin: 10px auto;
     color: #6B6767;
     padding-left: 15px;
-    
+
 }
 
 .formulario{
@@ -66,7 +66,7 @@ select{
     align-items: center;
 }
 
-button{
+a{
     display: block;
     margin: 30px auto;
     background: #D9D9D9;
@@ -84,5 +84,6 @@ button{
             transition: 0.7s;
             color: #000000;
         }
+  
 }
 `
