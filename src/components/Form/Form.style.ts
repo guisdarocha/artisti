@@ -60,13 +60,8 @@ select{
 
 }
 
-.formulario{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-a{
+a{  
+    max-width: 215px;
     display: block;
     margin: 30px auto;
     background: #D9D9D9;
@@ -77,6 +72,8 @@ a{
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.195em;
+    color: #000000;
+    text-decoration: none;
     filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.21));
     cursor: pointer;
     :hover{
@@ -86,4 +83,11 @@ a{
         }
   
 }
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 `

@@ -4,6 +4,8 @@ import abelha from '../../assets/abelha.png'
 
 type formProps = {
   form:any
+  selected: string
+  disabled: string
 }
 
 const Form = ({form}: formProps) => {
@@ -57,8 +59,9 @@ const Form = ({form}: formProps) => {
                     type="phone"
                     placeholder='Celular'
                 />
-                <select>
-                    <option onClick={novaGarrafa} value="hidromel">Hidromel Tradicional</option>
+                <select >
+                    <option selected disabled>Selecione sua Garrafa</option>
+                    <option  onClick={novaGarrafa} value="hidromel">Hidromel Tradicional</option>
                     <option onClick={novaGarrafa} value="melomel">Melomel</option>
                 </select>
                 <a href={`https://wa.me/555492423006?text=Olá, me chamo ${name}. Gostaria de fazer a reserva do ${garrafa}, está disponível? Aguardo resposta pelo telefone ${phone} ou no e-mail ${email}`} target={'_blank'}><i className="fa-brands fa-whatsapp"></i>
