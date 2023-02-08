@@ -6,6 +6,7 @@ import Products from './components/Products/Products'
 import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
 import { useRef } from 'react'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 
 function App() {
@@ -23,12 +24,14 @@ function App() {
 
   return (
     <>
+      <ParallaxProvider>
       <Nav onClick={scroll} about={about} products={products} form={form} />
       <HeroSection  />
       <About about={about} />
       <Products onClick={scroll} products={products}  form={form}/>
-      <Form form={form}/>
+      <Form form={form} selected={''} disabled={''}/>
       <Footer />
+      </ParallaxProvider>
     </>
   )
 }
