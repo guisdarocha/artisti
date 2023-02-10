@@ -25,8 +25,14 @@ const Products = (props: productsProps) => {
             <Product title={'Hidromel Tradicional'} text={'Elaborado com méis de diferentes floradas, leveduras selecionadas e maturação em ambiente controlado. Somente mel e água.'}  />
             <button className='reserve' onClick={() => {onClick(form)}}>RESERVE AGORA</button>             
           </div> 
+          <Parallax
+               translateX= {['-290px', '-300px']}
+               translateY= {['-1000px', '-1020px']}
+            >
             <img src={garrafa} alt="" className='garrafa' />
+            </Parallax>
             <img src={favo} alt="" className='favo' />
+            
           
         </div>
         <div className='melomel'>  
